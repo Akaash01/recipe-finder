@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 64, 64, 0.418);
+  z-index: 90;
+  position: fixed;
+}
+.btnarea {
+  padding-top: 10px;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  max-height: 80vh;
+  /* overflow-y: scroll; */
+}
+.modal ol li {
+  list-style: none;
+}
+.modal ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.modal ol li {
+  counter-increment: my-awesome-counter;
+}
+.modal ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: rgb(56, 54, 54);
+  font-weight: bold;
+}
+.scroll {
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+/* width */
+.scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.btnarea {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.btn {
+  border: none;
+  margin: 0px 5px;
+  padding: 5px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.4s;
+}
+.grn {
+  color: rgb(100, 158, 42);
+  border: 2px solid rgb(100, 158, 42);
+}
+.grn:hover {
+  color: white;
+  background: rgb(100, 158, 42);
+}
+
+.red {
+  color: rgb(202, 34, 34);
+  border: 2px solid rgb(202, 34, 34);
+}
+.red:hover {
+  color: white;
+  background: rgb(202, 34, 34);
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: center;
+}
+tr {
+  background-color: bisque;
+}
+td,
+th {
+  padding: 2px 5px;
+}
+table {
+  border-radius: 5px;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .modal {
+    width: 80vw;
+  }
+  .modal ol li {
+    padding: 5px 0px;
+  }
+  .nutri {
+    width: unset;
+  }
+}

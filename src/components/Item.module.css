@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.card {
+  margin: 1rem 3rem;
+  width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.card h2 {
+  font-weight: 600;
+}
+.card img {
+  width: 100%;
+}
+.card h3 {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.greenbtn {
+  color: yellowgreen;
+  border: 2px solid yellowgreen;
+}
+.greenbtn:hover {
+  color: white;
+  background-color: yellowgreen;
+}
+.redbtn {
+  color: rgb(184, 38, 38);
+  border: 2px solid rgb(184, 38, 38);
+}
+.redbtn:hover {
+  color: white;
+  background-color: rgb(184, 38, 38);
+}
